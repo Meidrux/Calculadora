@@ -32,7 +32,7 @@ tela = TelaCalc()
 tela.Iniciar()
 
 
-'''
+''' Codigo inicial que usei como base
 num1 = int(input("insira um numéro: "))
 num2 = int(input("insira outro numéro: "))
 soma = num1 + num2
