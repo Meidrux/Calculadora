@@ -5,11 +5,12 @@ import PySimpleGUI as sg
 class TelaCalc:
     def __init__(self):
         # layout
+        sg.theme("DefaultNoMoreNagging")
         layout = [
             [sg.Text('Primeiro número'), sg.Input(size=(15, 0), key='a')],
             [sg.Text('Segundo número'), sg.Input(size=(15, 0), key="b")],
             [sg.Button('Calcular')],
-            [sg.Output(size=(6, 6))]
+            [sg.Output(size=(6, 3))]
 
         ]
         # janela
@@ -30,15 +31,3 @@ class TelaCalc:
 
 tela = TelaCalc()
 tela.Iniciar()
-
-
-''' Codigo inicial que usei como base
-num1 = int(input("insira um numéro: "))
-num2 = int(input("insira outro numéro: "))
-soma = num1 + num2
-
-if soma % 2 == 0:
-    print(soma + randint(0, 10))
-else:
-    print(soma - randint(0, 10))
-'''
